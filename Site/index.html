@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="estilos.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Podcast</a>
+  <a href="#" class="w3-bar-item w3-button">Framework</a>
+  <a href="#" class="w3-bar-item w3-button">Time</a>
+  <a href="#" class="w3-bar-item w3-button">Contato</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="#" class="w3-bar-item w3-button bg-cor"><img width="55" src="./img/Captura_de_tela_2025-02-06_104218-removebg-preview (2).png" alt=""> ACE</a>
+  <a href="#podcast" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Podcast</a>
+  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Framework</a>
+  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Time</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contato</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">Voltar <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#" class="w3-bar-item w3-button">Episódios </a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#podcast" class="w3-bar-item w3-button">Podcast</a>
+    <a href="#work" class="w3-bar-item w3-button">Work</a>
+    <a href="#team" class="w3-bar-item w3-button">Team</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    <a href="#" class="w3-bar-item w3-button">Search</a>
+  </div>
+</div>
+
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="./img/664b6af1e2428aed06246af0c6581efb.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">EPISÓDIOS</button>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container bg-cor w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button bg-cor w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Olá, esse é apenas o primeiro episódio!</h4>
+      <h5>Acredita? <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>Legal né? esse site vai informar um pouco melhor.</p>
+      <p>Sobre o Ruby on Rails!! <a class="w3-text-teal" href=""></a> </p>
+    </div>
+    <footer class="w3-container bg-cor">
+      <p>Obrigado :) </p>
+    </footer>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>Podcast</h3>
+        <p>O grupo ACE traz informações sobre o Ruby on Rails e discussões embasadas. <br>Primeiro episódio do podcast:</p>
+        <iframe width="590" height="530" src="https://www.youtube.com/embed/CxbmXsL72tE?si=DCfpGjHEuR0NwUcv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i>Sobre o Tema</a></p>
+      </div>
+      <div class="w3-col m6">
+        <img class="w3-image w3-round-large" src="./img/Designer.jpeg" alt="Buildings" width="700" height="394">
+      </div>
+    </div>
+  </div>
+
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 bg-tema" id="bg">
+
+<div class="w3-quarter">
+<h2>Sobre o Tema</h2>
+<p>Ruby on Rails é um framework de desenvolvimento web rápido e eficiente, baseado na linguagem Ruby. Ele segue a filosofia de "convenção sobre configuração" e "não se repita", o que acelera o processo de criação de aplicações. Utiliza a arquitetura MVC (Model-View-Controller) para organizar o código de forma modular e clara. Rails é ideal para construir aplicações dinâmicas e escaláveis de maneira rápida, com uma comunidade ativa e muitas ferramentas integradas. Grandes empresas como GitHub e Shopify usam Rails para impulsionar seus negócios.</p>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+    <img src="./img/a-Photoroom.png" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>Produtividade e Rapidez</h3>
+  <h4>No desenvolvimento</h4>
+  <p>Rails permite a criação de aplicações web de forma rápida e eficiente, graças à sua filosofia de "convenção sobre configuração" e ao vasto conjunto de ferramentas integradas. Isso reduz a necessidade de escrever código redundante e acelera o desenvolvimento.</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+  <img src="./img/a-Photoroom.png" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>Arquitetura MVC</h3>
+  <h4>Model-View-Controller</h4>
+  <p>O Framework Ruby on Rails segue a arquitetura MVC(Model-View-Controller), que organiza o código em três componentes separados, facilitando a manutenção, e ajudando no desenvolvimento colaborativo e a escalabilidade das aplicações.</p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="w3-card w3-white">
+ <img src="./img/a-Photoroom.png" alt="Lights" style="width:100%">
+  <div class="w3-container">
+  <h3>Grande Comunidade</h3>
+  <h4>E Recursos</h4>
+  <p>Este é um Framework que possui uma comunidade ativa e vibrante, oferecendo uma vasta gama de gems (bibliotecas) e documentação, o que facilita encontrar soluções e melhorar constantemente o desenvolvimento de aplicações web.</p>
+  </div>
+  </div>
+</div>
+
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Vídeo Aula:
+      <iframe width="600" height="500" src="https://www.youtube.com/embed/OTOS6oZT348?si=YWd6IIiB7gB2uklj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="./img/as.jpeg" alt="Buildings" width="500" height="400">
+    </div>
+  </div>
+</div>
+
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+    <h2> TIME</h2>
+    <p>Conheça os hosts:</p>
+    
+    <div class="w3-row"><br>
+    
+    <div class="w3-quarter">
+      <img src="./img/gutas.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+      <h3>Gustavo</h3>
+      <h3>Garcia</h3>
+      <p>Pesquisa</p>
+      <a class="w3-button w3-large bg-cor" target="_blank" href="https://github.com/GUSTAGARCIANDS" title="Github"><i class="fa fa-github"></i></a>
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="./img/SP-Studio.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+      <h3>Juliana</h3>
+      <h3> Karla</h3>
+      <p>Site/Roteiro</p>
+      <a class="w3-button w3-large bg-cor" target="_blank" href="https://github.com/maxiecuti" title="Github"><i class="fa fa-github"></i></a>
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="./img/SP-Studio (1).png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+      <h3>Kaiki</h3>
+      <h3>Santos</h3>
+      <p>Líder</p>
+      <a class="w3-button w3-large bg-cor" target="_blank" href="https://github.com/kaikisantos21" title="Github"><i class="fa fa-github"></i></a>
+    </div>
+    
+    <div class="w3-quarter">
+      <img src="./img/Meu avatar-lais.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+      <h3>Lais</h3>
+      <h3>Arlindo</h3>
+      <p>Edição do Podcast</p>
+      <a class="w3-button w3-large bg-cor" target="_blank" href="https://github.com/laisarlindo" title="Github"><i class="fa fa-github"></i></a>
+    </div>
+    
+    </div>
+    </div>
+    
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle bg-cor"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge bg-c w3-bottombar">Entre em Contato</span></div>
+      <p>Caso tenha se interessado pelo conteúdo, nos contate.</p>
+      <p><i class="fa fa-map-marker bg-co w3-xlarge"></i>  Sorocaba, BR</p>
+      <p><i class="fa fa-phone bg-co w3-xlarge"></i>  +15 101010101</p>
+      <p><i class="fa fa-envelope-o bg-co w3-xlarge"></i>ace.dev@gmail.com</p>
+    </div>
+    <div class="w3-col m7">
+      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+      <div class="w3-section">      
+        <label>Name</label>
+        <input class="w3-input" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">      
+        <label>Email</label>
+        <input class="w3-input" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">      
+        <label>Message</label>
+        <input class="w3-input" type="text" name="Message" required>
+      </div>  
+      <input class="w3-check" type="checkbox" checked name="Like">
+      <label>Eu concordo com os termos</label>
+      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Redes Sociais:</h4>
+  <a class="w3-button w3-large bg-cor" href="javascript:void(0)" title="Github"><i class="fa fa-github"></i></a>
+  <link rel="stylesheet" href="">
+  <a class="w3-button w3-large bg-cor" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large bg-cor" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large bg-cor w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>Feito por <a href="" target="_blank">ACE</a></p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding bg-cor w3-hide-small">Voltar</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+.bg-tema{
+    background-color: rgb(148, 192, 220);
+}
+.bg-cor{
+    background-color: rgb(167, 195, 214) !important;
+}
+.bg-co{
+    color:  rgb(59, 105, 136);
+}
+.bg-c{
+    border-color:  rgb(59, 105, 136);
+}
