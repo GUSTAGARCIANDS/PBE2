@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cadastro do Endereço</title>
+	<link rel="stylesheet" href="css/enderecoCadastro.css">
+</head>
+
+<body>
+	<form id="cadastroEnderecoForm">
+
+		<label for="numero_casa">Número Casa:</label>
+		<input type="text" name="numero-casa" id="numero-casa" required="required" id="numero-casa" placeholder="Ex: 12"
+			autofocus><br>
+
+		<label for="rua">Rua:</label>
+		<input type="text" name="rua" id="rua" readonly id="rua" placeholder="Ex: rua de copacabana"
+			autofocus><br>
+
+		<label for="bairro">Bairro:</label>
+		<input type="text" name="bairro" id="bairro" readonly id="bairro" placeholder="Ex: barra da tijuca"
+			autofocus><br>
+
+		<label for="cidade">Cidade:</label>
+		<input type="text" name="cidade" id="cidade" readonly id="cidade" placeholder="Ex: São Paulo"
+			autofocus><br>
+
+		<label for="estado">Estado:</label>
+		<input type="text" name="estado" id="estado" readonly id="estado" placeholder="Ex: Rio de Janeiro"
+			autofocus><br>
+
+		<label for="cep">CEP:</label>
+		<input type="text" name="cep" id="cep" required="required" id="cep" placeholder="Ex: 10923-298" autofocus><br>
+
+		<label for="complemento">Complemento:</label>
+		<input type="text" name="complemento" id="complemento" id="complemento" placeholder="Ex: Abcd" autofocus><br>
+
+		<input type="submit" name="enviar" value="Enviar" id="enviar" class="item">
+	</form>
+
+	<script src="script/scriptCadastroEndereco.js"></script>
+</body>
+
+</html>
